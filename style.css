@@ -1,0 +1,129 @@
+/* Dejahnae Fairclough - Portfolio stylesheet */
+
+/*  Css Variables */
+:root {
+    --bg-main: #faf7f5;
+    --card-bg: #ffffff;
+    --text-color: #3d3748;
+    --primary-blue: #a69abd;
+    --accent-blue: #b9828c;
+    --border-color: #e8dfe7;
+}
+
+/*  Element Selector */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/*  Header Selector */
+header {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        margin: 8px 0 0 0;
+        color: #a8dadc;
+        font-size: 1.1rem;
+    }
+
+/*  Navigation Selector */
+nav {
+    background-color: #F2DDE5;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px 0;
+}
+
+    /* Selector for Nav Links */
+    nav a {
+        color: #57465E;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.95rem;
+        transition: color 0.2s ease;
+    }
+
+        /* Pseudoclass Selector */
+        nav a:hover {
+            color: #B76E89;
+            text-decoration: underline;
+        }
+
+/*  Main content  */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(166, 154, 189, 0.12);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+    section h2 {
+        color: var(--primary-blue);
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 8px;
+        margin-top: 0;
+    }
+
+p {
+    margin-bottom: 15px;
+
+}
+
+
+/* Class Selector */
+.highlight {
+    font-weight: bold;
+    color: var(--accent-blue);
+}
+
+/* ID Selector */
+#about {
+    padding: 15px;
+    border-left: 4px solid var(--primary-blue);
+}
+
+/*  Attribute Selector */
+.profile-pic {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #D99AAE;
+    border-radius: 4px;
+    margin: 15px auto;
+    box-shadow: 0 2px 8px rgba(185, 130, 140, 0.15);
+}
+
+/*    Mobile View */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+}
